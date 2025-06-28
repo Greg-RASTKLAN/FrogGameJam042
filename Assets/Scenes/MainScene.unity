@@ -430,7 +430,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65607575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1585,7 +1585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: cost
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: title
@@ -1749,7 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a268f3bfa91915d4c8e889b61ef0234a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnNumberAffection: 0
+  spawnNumberAffection: 2
 --- !u!1001 &801269026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1940,7 +1940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a268f3bfa91915d4c8e889b61ef0234a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnNumberAffection: 0
+  spawnNumberAffection: 2
 --- !u!1 &884470420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,7 +3262,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1031467269}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.79552007
+  m_Size: 0.79552
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
