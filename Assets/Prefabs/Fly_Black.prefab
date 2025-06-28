@@ -99,4 +99,5 @@ MonoBehaviour:
   hitPoints: 1
   lifetime: 3
   noiseSpeed: 1
-  spawnPercent: 68.5
+  spawnPercent: 0
+  baseValue: 1
