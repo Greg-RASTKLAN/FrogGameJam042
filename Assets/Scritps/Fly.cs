@@ -4,8 +4,12 @@ public class Fly : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float moveRange = 2f;
+    [SerializeField] private int hitPoints = 1;
+    [SerializeField] private float lifetime = 3f; //Duration of the fly
     //[SerializeField] private float noiseScale = 1f;
     [SerializeField] private float noiseSpeed = 1f;
+
+    [Range(0,100)] public float spawnPercent = 25f; 
 
     private float xSeed;
     private float ySeed;

@@ -105,6 +105,7 @@ MonoBehaviour:
   speed: 2
   moveRange: 1
   noiseSpeed: 5
+  spawnPercent: 100
 --- !u!50 &-688618667700811846
 Rigidbody2D:
   serializedVersion: 5

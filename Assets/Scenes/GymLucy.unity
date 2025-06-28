@@ -163,8 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3310fd5599c1c64d9ba09a021947cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flyPrefab: {fileID: 2986271549530433472, guid: 300e468e726a8d945af3e10463691db4, type: 3}
-  cooldownOverride: 2
+  DEBUGcooldownOverride: 1
+  fliesList:
+  - {fileID: 6552704357095412688, guid: 300e468e726a8d945af3e10463691db4, type: 3}
+  - {fileID: -6083628209243905950, guid: 89fa8940382bec44298687d8033997f0, type: 3}
 --- !u!1 &1252859303
 GameObject:
   m_ObjectHideFlags: 0
