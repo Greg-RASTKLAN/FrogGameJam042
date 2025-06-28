@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   moveRange: 2
+  hitPoints: 1
   lifetime: 3
   noiseSpeed: 1
-  spawnPercent: 0
+  spawnPercent: 68.5

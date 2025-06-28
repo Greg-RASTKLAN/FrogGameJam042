@@ -107,7 +107,7 @@ MonoBehaviour:
   hitPoints: 1
   lifetime: 3
   noiseSpeed: 1
-  spawnPercent: 100
+  spawnPercent: 29
 --- !u!50 &-688618667700811846
 Rigidbody2D:
   serializedVersion: 5
