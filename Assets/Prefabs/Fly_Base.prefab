@@ -99,12 +99,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2986271549530433472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9bda6c313e6b0244b171caadb6cb881, type: 3}
+  m_Script: {fileID: 11500000, guid: 6854ff1b7f845ee4b9e781b9105edd31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  moveRange: 1
-  noiseSpeed: 5
+  speed: 1
+  moveRange: 2
+  hitPoints: 1
+  lifetime: 3
+  noiseSpeed: 1
   spawnPercent: 100
 --- !u!50 &-688618667700811846
 Rigidbody2D:
