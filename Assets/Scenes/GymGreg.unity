@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 328206907}
   - component: {fileID: 328206906}
   - component: {fileID: 328206905}
+  - component: {fileID: 328206910}
   m_Layer: 0
   m_Name: Langue
   m_TagString: Untagged
@@ -151,8 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c879c46836fe16544a155172fbcce220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  cooldownDuration: 3
+  shootSpeed: 35
+  returnSpeed: 25
+  cooldownDuration: 1
   readyColor: {r: 0.754717, g: 0.14951931, b: 0.14951931, a: 1}
   cooldownColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!58 &328206906
@@ -185,7 +187,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -285,6 +287,66 @@ Transform:
   m_LocalPosition: {x: -0.01, y: -4.23, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328206910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328206904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e497fbadf7b214141b007685a902953b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &912331512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912331514}
+  - component: {fileID: 912331513}
+  m_Layer: 0
+  m_Name: FliesSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &912331513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912331512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3310fd5599c1c64d9ba09a021947cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUGcooldownOverride: 1
+  fliesList:
+  - {fileID: 6552704357095412688, guid: 300e468e726a8d945af3e10463691db4, type: 3}
+  - {fileID: -6083628209243905950, guid: 89fa8940382bec44298687d8033997f0, type: 3}
+--- !u!4 &912331514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912331512}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.81, y: 0.37, z: 0.052985266}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -487,3 +549,4 @@ SceneRoots:
   - {fileID: 1593311622}
   - {fileID: 1643103122}
   - {fileID: 328206909}
+  - {fileID: 912331514}

@@ -97,4 +97,14 @@ public class TongController : MonoBehaviour
         pos.z = 0f;
         return pos;
     }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Fly fly = other.GetComponent<Fly>();
+        if (fly != null)
+        {
+            Destroy(fly.gameObject);
+        }
+    }
 }
