@@ -1,0 +1,36 @@
+using UnityEngine;
+
+public class Fly : MonoBehaviour
+{
+    [SerializeField] private float speed = 1f;
+    [SerializeField] private float moveRange = 2f;
+    //[SerializeField] private float noiseScale = 1f;
+    [SerializeField] private float noiseSpeed = 1f;
+
+    private float xSeed;
+    private float ySeed;
+
+    void Start()
+    {
+        // Random seeds for variation per fly
+        xSeed = Random.Range(0f, 100f);
+        ySeed = Random.Range(0f, 100f);
+    }
+
+    void Update()
+    {
+        MoveWithPerlin();
+    }
+
+    public virtual void MoveWithPerlin()
+    {
+        float t = Time.time * noiseSpeed;
+
+        float x = Mathf.PerlinNoise(xSeed + t, ySeed);
+        float y = Mathf.PerlinNoise(xSeed, ySeed + t);
+
+        Vector3 direction = new Vector3(x, y, 0f).normalized;
+
+        transform.position += direction * speed * moveRange * Time.deltaTime;
+    }
+}
