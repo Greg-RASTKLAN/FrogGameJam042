@@ -8,11 +8,13 @@ public class UpgradeCard : MonoBehaviour
     [SerializeField] private Sprite sprite;
     [SerializeField] private string title;
     [SerializeField] private string description;
+    public int cost;
 
     [Header("UI References")]
     [SerializeField] private Image cardImage;
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private TextMeshProUGUI descriptionText;
+    [SerializeField] private TextMeshProUGUI costText;
 
 
     public void OnValidate()
@@ -25,6 +27,9 @@ public class UpgradeCard : MonoBehaviour
 
         if (descriptionText != null)
             descriptionText.text = description;
+
+        if (costText != null)
+            costText.text = ("Cost: " + cost + " flies");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

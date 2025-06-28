@@ -6,6 +6,7 @@ using UnityEngine;
 public class FliesSpawner : MonoBehaviour
 {
     public static float spawnCooldown = 2f;
+    public static int fliesToSpawn = 1;
 
     [SerializeField] private float DEBUGcooldownOverride;
 
@@ -28,8 +29,11 @@ public class FliesSpawner : MonoBehaviour
     {
         while (true)
         {
-            GameObject flyToSpawn = GetRandomFlyByPercent();
-            Instantiate(flyToSpawn, transform);
+            for (int i = 0; i < fliesToSpawn; i++)
+            {
+                GameObject flyToSpawn = GetRandomFlyByPercent();
+                Instantiate(flyToSpawn, transform);
+            }
             yield return new WaitForSeconds(spawnCooldown);
         }
     }

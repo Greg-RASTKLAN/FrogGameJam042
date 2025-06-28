@@ -1,16 +1,34 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManager Instance;
+
+    public int currency;
+
+    public event Action<int> OnCurrencyChanged;
+
+    private void Awake()
     {
-        
+        Instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddCurrency(int amount)
     {
-        
+        currency += amount;
+        OnCurrencyChanged?.Invoke(currency);
+    }
+
+    public void SpendCurrency(int amount)
+    {
+        currency -= amount;
+        OnCurrencyChanged?.Invoke(currency);
+    }
+
+
+    public void DEBUGAddCurrency()
+    {
+        AddCurrency(500);
     }
 }
