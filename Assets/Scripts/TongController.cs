@@ -104,6 +104,7 @@ public class TongController : MonoBehaviour
         Fly fly = other.GetComponent<Fly>();
         if (fly != null)
         {
+            GameManager.Instance.AddCurrency(fly.baseValue);
             Destroy(fly.gameObject);
         }
     }

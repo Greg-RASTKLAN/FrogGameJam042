@@ -10,6 +10,7 @@ public class Fly : MonoBehaviour
     [SerializeField] private float noiseSpeed = 1f;
 
     [Range(0,100)] public float spawnPercent = 25f; 
+    public int baseValue = 1;
 
     private float xSeed;
     private float ySeed;
@@ -28,13 +29,12 @@ public class Fly : MonoBehaviour
 
     public virtual void MoveWithPerlin()
     {
-        float t = Time.time * noiseSpeed;
+        float t = Time.time * noiseSpeed * 5f; // faster noise time
 
-        float x = Mathf.PerlinNoise(xSeed + t, ySeed) * 2f - 1f;
-        float y = Mathf.PerlinNoise(xSeed, ySeed + t) * 2f - 1f;
+        float x = Mathf.PerlinNoise(xSeed + t, ySeed + t) * 2f - 1f;
+        float y = Mathf.PerlinNoise(xSeed - t, ySeed - t) * 2f - 1f;
 
         Vector3 direction = new Vector3(x, y, 0f).normalized;
-
         transform.position += direction * speed * moveRange * Time.deltaTime;
     }
 }

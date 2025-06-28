@@ -1,25 +1,40 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class TongHit : MonoBehaviour
 {
-    public void DetectObjectsBetween(Vector3 from, Vector3 to)
+
+    private SpriteRenderer sr;
+    private CircleCollider2D cc;
+
+    void Start()
     {
-        Vector3 direction = (to - from).normalized;
-        float distance = Vector3.Distance(from, to);
+        sr = GetComponent<SpriteRenderer>();
+        cc = GetComponent<CircleCollider2D>();
 
-        RaycastHit2D[] hits = Physics2D.RaycastAll(from, direction, distance);
-
-        foreach (RaycastHit2D hit in hits)
+        if (GameManager.Instance != null)
         {
-            if (hit.collider != null)
-            {
-                Fly fly = hit.collider.GetComponent<Fly>();
-
-                if (fly != null)
-                {
-                    Destroy(fly.gameObject); // ou tout autre effet
-                }
-            }
+            GameManager.Instance.OnTongueRadiusChanged -= UpdateTongueRadius; // Prevent double subscription
+            GameManager.Instance.OnTongueRadiusChanged += UpdateTongueRadius;
+            UpdateTongueRadius(GameManager.Instance.tongueRadius); // Set initial value
         }
     }
+
+    public void UpdateTongueRadius(float newTongueRadius)
+    {
+        Debug.Log(newTongueRadius);
+        if (sr != null && sr.sprite != null && cc != null)
+        {
+            cc.radius = newTongueRadius;
+
+            float spriteDiameter = sr.sprite.bounds.size.x; // Assuming it's a circle sprite
+            float desiredDiameter = cc.radius * 2f;
+
+            float scale = desiredDiameter / spriteDiameter;
+
+            transform.localScale = new Vector3(scale, scale, 1f);
+        }
+    }
+
+
 }

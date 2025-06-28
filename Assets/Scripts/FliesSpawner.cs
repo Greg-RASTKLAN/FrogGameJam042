@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class FliesSpawner : MonoBehaviour
 {
-    public static float spawnCooldown = 2f;
+    public static float spawnCooldown = 3f;
     public static int fliesToSpawn = 1;
 
-    [SerializeField] private float DEBUGcooldownOverride;
 
     [SerializeField] private List<Fly> fliesList;
 
@@ -21,7 +20,6 @@ public class FliesSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spawnCooldown = DEBUGcooldownOverride;
 
     }
 
