@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class Upg_AffectSpawnNumber : MonoBehaviour
+public class Upg_AffectSpawnNumber : UpgradeEffect
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private int spawnNumberAffection;
+    public override void Apply(UpgradeContext context)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        FliesSpawner.fliesToSpawn += spawnNumberAffection;
     }
 }
