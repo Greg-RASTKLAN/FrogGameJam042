@@ -143,9 +143,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -60.30645
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: Tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
     - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_Name
       value: UpgradeBase (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Tongue radius
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
@@ -163,6 +179,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.79665
       objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 7 flies'
+      objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -174,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase frog's tongue radius
       objectReference: {fileID: 0}
     - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_Pivot.x
@@ -285,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3f92dd808663f479e4943b366f0a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tongueRadiusModifier: 20
+  tongueRadiusModifier: 10
 --- !u!1 &65607575
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +493,174 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &104918451
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 884470421}
+    m_Modifications:
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.30645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Name
+      value: test (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.79665
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 5 flies'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 207.7302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 77.7389
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079290020}
+  m_SourcePrefab: {fileID: 100100000, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
 --- !u!1 &222931376
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +743,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1596923105}
   m_HandleRect: {fileID: 1596923104}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -719,9 +911,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -60.30645
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: Tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
     - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_Name
       value: UpgradeBase (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Tongue radius
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
@@ -739,6 +947,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.79665
       objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 5 flies'
+      objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -750,6 +962,10 @@ PrefabInstance:
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase frog's tongue radius
       objectReference: {fileID: 0}
     - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_Pivot.x
@@ -952,6 +1168,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333044025}
   m_CullTransparentMesh: 1
+--- !u!1 &409328887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 1310045342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &409328888 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 1310045342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &409328889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409328887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3c7a784b9b81a4e8779f94a4bc2a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tongueCooldown: 50
 --- !u!1 &422272861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,9 +1583,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -60.30645
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: More flies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase flies spawn
+      objectReference: {fileID: 0}
     - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_Name
-      value: UpgradeBase
+      value: MoreFlies_Cost8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: More flies
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1364,6 +1619,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35.79665
       objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 8 flies'
+      objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1375,6 +1634,10 @@ PrefabInstance:
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase flies spawn
       objectReference: {fileID: 0}
     - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_Pivot.x
@@ -1486,7 +1749,196 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a268f3bfa91915d4c8e889b61ef0234a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnNumberAffection: 1
+--- !u!1001 &801269026
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 884470421}
+    m_Modifications:
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.30645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: More flies
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase flies spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Name
+      value: MoreFlies_Cost10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: More flies
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.79665
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 10 flies'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase flies spawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 207.7302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 77.7389
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 801269029}
+  m_SourcePrefab: {fileID: 100100000, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+--- !u!224 &801269027 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 801269026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &801269028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 801269026}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &801269029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801269028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a268f3bfa91915d4c8e889b61ef0234a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884470420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,8 +1970,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 634382480}
+  - {fileID: 801269027}
   - {fileID: 324702838}
   - {fileID: 54997071}
+  - {fileID: 1387854860}
+  - {fileID: 2079290019}
+  - {fileID: 409328888}
   m_Father: {fileID: 333044026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -1813,6 +2269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currency: 0
   tongueRadius: 0.2
+  tongueCooldown: 1
 --- !u!4 &1077196330
 Transform:
   m_ObjectHideFlags: 0
@@ -1965,6 +2422,174 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1001 &1310045342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 884470421}
+    m_Modifications:
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.30645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Name
+      value: test (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.79665
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 1 flies'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 207.7302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 77.7389
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 409328889}
+  m_SourcePrefab: {fileID: 100100000, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
 --- !u!1 &1313706399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,6 +2740,179 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313706399}
   m_CullTransparentMesh: 1
+--- !u!1001 &1387854859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 884470421}
+    m_Modifications:
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60.30645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: cost
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: title
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: description
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Name
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 89.0017
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.79665
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: 'Cost: 5 flies'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.3179
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_text
+      value: Increase frog's tongue radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 207.7302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 77.7389
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1793528937}
+  m_SourcePrefab: {fileID: 100100000, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+--- !u!224 &1387854860 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 1387854859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1596923103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,8 +3070,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1031467270}
   m_HandleRect: {fileID: 1031467269}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000006
+  m_Size: 0.79552007
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2352,6 +3150,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1793528936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 1387854859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1793528937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793528936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3c7a784b9b81a4e8779f94a4bc2a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tongueCooldown: 50
 --- !u!1 &2024656616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +3244,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024656616}
   m_CullTransparentMesh: 1
+--- !u!1 &2079290018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2390305197914840622, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 104918451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2079290019 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8663492144736032956, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+  m_PrefabInstance: {fileID: 104918451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2079290020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079290018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3c7a784b9b81a4e8779f94a4bc2a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tongueCooldown: 50
 --- !u!1 &2093687578
 GameObject:
   m_ObjectHideFlags: 0

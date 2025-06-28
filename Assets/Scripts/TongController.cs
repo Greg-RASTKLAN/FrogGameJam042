@@ -31,6 +31,10 @@ public class TongController : MonoBehaviour
         startPosition = transform.position;
         sr = GetComponent<SpriteRenderer>();
         sr.color = readyColor;
+
+        GameManager.Instance.OnTongueCooldownDecreased -= UpdateCooldownValue;
+        GameManager.Instance.OnTongueCooldownDecreased += UpdateCooldownValue;
+        UpdateCooldownValue(GameManager.Instance.tongueCooldown);
     }
 
     private void Update()
@@ -107,5 +111,10 @@ public class TongController : MonoBehaviour
             GameManager.Instance.AddCurrency(fly.baseValue);
             Destroy(fly.gameObject);
         }
+    }
+
+    private void UpdateCooldownValue(float newCooldown) 
+    {
+        cooldownDuration = newCooldown;
     }
 }

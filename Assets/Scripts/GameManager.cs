@@ -7,9 +7,11 @@ public class GameManager : MonoBehaviour
 
     public int currency;
     public float tongueRadius = 0.5f;
+    public float tongueCooldown = 1f;
 
     public event Action<int> OnCurrencyChanged;
     public event Action<float> OnTongueRadiusChanged;
+    public event Action<float> OnTongueCooldownDecreased;
 
     private void Awake()
     {
@@ -31,6 +33,12 @@ public class GameManager : MonoBehaviour
     {
         tongueRadius *= (1 + (amount/100));
         OnTongueRadiusChanged?.Invoke(tongueRadius);
+    }
+
+    public void DecreaseTongueCooldown (float amount)
+    {
+        tongueCooldown *= (1 - (amount / 100));
+        OnTongueCooldownDecreased?.Invoke(tongueCooldown);
     }
 
 
