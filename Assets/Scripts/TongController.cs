@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-
 public class TongController : MonoBehaviour
 {
-    // --- États possibles -----------------------------------------------------
+    // Différents états possibles
     private enum TongState { Ready, Shooting, Returning, Cooldown }
     private TongState state = TongState.Ready;
 
-    // --- Variables publique viewport ----------------------------------
+
+    // Variables publiques viewport
     [Header("Mouvement")]
-    [SerializeField] private float speed = 5f; // Vitesse du Lerp
+    [SerializeField] private float speed = 30f;
 
     [Header("Cooldown")]
     [SerializeField] private float cooldownDuration = 1f;
@@ -18,13 +18,14 @@ public class TongController : MonoBehaviour
     [SerializeField] private Color readyColor = Color.white;
     [SerializeField] private Color cooldownColor = Color.grey;
 
-    // --- Variables internes --------------------------------------------------
-    private float returnThreshold = 0.05f;
+
+    // Variables internes
+    private float targetThreshold = 0.05f;
     private Vector3 startPosition;
+    private Vector3 targetPosition;
     private float cooldownTimer;
     private SpriteRenderer sr;
 
-    // -------------------------------------------------------------------------
     void Start()
     {
         startPosition = transform.position;
@@ -36,33 +37,28 @@ public class TongController : MonoBehaviour
     {
         switch (state)
         {
-            // ---------- PRÊT : on peut tirer ---------------------------------
+            // ---------- PRÊT : on peut tirer ----------
             case TongState.Ready:
                 if (Input.GetMouseButtonDown(0))
-                    state = TongState.Shooting;
-                break;
-
-            // ---------- TIR : vers la souris ---------------------------------
-            case TongState.Shooting:
-                if (Input.GetMouseButtonUp(0))
-                    state = TongState.Returning;
-
-                MoveTowards(GetMouseWorldPos());
-                break;
-
-            // ---------- RETOUR : vers la base --------------------------------
-            case TongState.Returning:
-                MoveTowards(startPosition);
-
-                if (IsAtStart())
                 {
+                    targetPosition = GetMouseWorldPos();
+                    state = TongState.Shooting;
+                }
+                break;
+            // ---------- TIR : vers le clic de la souris ----------
+            case TongState.Shooting:
+                MoveTowards(targetPosition);
+
+                if (Vector3.Distance(transform.position, targetPosition) < targetThreshold)
+                {
+                    transform.position = startPosition; // retour instantané
                     state = TongState.Cooldown;
                     cooldownTimer = cooldownDuration;
-                    sr.color = cooldownColor;   // indicateur visuel
+                    sr.color = cooldownColor;
                 }
                 break;
 
-            // ---------- COOLDOWN : on attend ---------------------------------
+            // ---------- COOLDOWN : on attend ----------
             case TongState.Cooldown:
                 cooldownTimer -= Time.deltaTime;
                 if (cooldownTimer <= 0f)
@@ -74,11 +70,10 @@ public class TongController : MonoBehaviour
         }
     }
 
-    // -------------------------------------------------------------------------
     private void MoveTowards(Vector3 target)
     {
-        target.z = 0f; // reste en 2D
-        transform.position = Vector3.Lerp(transform.position, target, speed * Time.deltaTime);
+        target.z = 0f;
+        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 
     private Vector3 GetMouseWorldPos()
@@ -87,7 +82,4 @@ public class TongController : MonoBehaviour
         pos.z = 0f;
         return pos;
     }
-
-    private bool IsAtStart() =>
-        Vector3.Distance(transform.position, startPosition) < returnThreshold;
 }
