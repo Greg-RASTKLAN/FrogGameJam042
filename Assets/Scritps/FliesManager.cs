@@ -22,8 +22,5 @@ public class FliesManager : MonoBehaviour
         
     }
 
-    public void NewFlies()
-    {
-        Instantiate(flyPrefab, transform);
-    }
+    
 }

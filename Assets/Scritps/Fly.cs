@@ -26,8 +26,8 @@ public class Fly : MonoBehaviour
     {
         float t = Time.time * noiseSpeed;
 
-        float x = Mathf.PerlinNoise(xSeed + t, ySeed);
-        float y = Mathf.PerlinNoise(xSeed, ySeed + t);
+        float x = Mathf.PerlinNoise(xSeed + t, ySeed) * 2f - 1f;
+        float y = Mathf.PerlinNoise(xSeed, ySeed + t) * 2f - 1f;
 
         Vector3 direction = new Vector3(x, y, 0f).normalized;
 
