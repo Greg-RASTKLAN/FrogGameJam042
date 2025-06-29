@@ -45,7 +45,10 @@ public class GameManager : MonoBehaviour
         OnTongueCooldownDecreased?.Invoke(tongueCooldown);
     }
 
-
+    public void IncreaseBaseFlyValue(int amount)
+    {
+        baseFlyValue += amount;
+    }
     public void DEBUGAddCurrency()
     {
         AddCurrency(500);
