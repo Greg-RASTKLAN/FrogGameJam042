@@ -12,6 +12,7 @@ public class TongHit : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         cc = GetComponent<CircleCollider2D>();
 
+
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnTongueRadiusChanged -= UpdateTongueRadius; // Prevent double subscription
@@ -27,12 +28,7 @@ public class TongHit : MonoBehaviour
         {
             cc.radius = newTongueRadius;
 
-            float spriteDiameter = sr.sprite.bounds.size.x; // Assuming it's a circle sprite
-            float desiredDiameter = cc.radius * 2f;
-
-            float scale = desiredDiameter / spriteDiameter;
-
-            transform.localScale = new Vector3(scale, scale, 1f);
+            
         }
     }
 
