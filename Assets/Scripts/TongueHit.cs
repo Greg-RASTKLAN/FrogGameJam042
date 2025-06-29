@@ -28,7 +28,7 @@ public class TongHit : MonoBehaviour
             cc.radius = newTongueRadius;
 
             float spriteDiameter = sr.sprite.bounds.size.x; // Assuming it's a circle sprite
-            float desiredDiameter = cc.radius * 2f;
+            float desiredDiameter = cc.radius * 4f;
 
             float scale = desiredDiameter / spriteDiameter;
 
