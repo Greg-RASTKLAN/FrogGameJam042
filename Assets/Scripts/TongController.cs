@@ -18,6 +18,10 @@ public class TongController : MonoBehaviour
     [SerializeField] private Color readyColor = Color.white;
     [SerializeField] private Color cooldownColor = Color.grey;
 
+    [Header("Sound")]
+    [SerializeField] private AudioSource tongueSounds;
+    [SerializeField] private AudioClip[] clips;
+
     // ---------------- Variables internes ----------------
     private readonly float threshold = 0.05f;
     private Vector3 startPosition;
@@ -52,11 +56,14 @@ public class TongController : MonoBehaviour
 
             // ---------- ALLER ----------
             case TongState.Shooting:
-                MoveTowards(targetPosition, shootSpeed);
 
+                MoveTowards(targetPosition, shootSpeed);
+                
                 if (Vector3.Distance(transform.position, targetPosition) < threshold)
                 {
                     state = TongState.Returning;
+                    int index = Random.Range(0, clips.Length);
+                    tongueSounds.PlayOneShot(clips[index]);
                 }
                 break;
 
