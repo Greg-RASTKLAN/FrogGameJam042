@@ -431,19 +431,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.00171
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60.30645
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: cost
@@ -454,6 +454,10 @@ PrefabInstance:
       value: Tongue radius
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: -34206919893479097, guid: 28b9281748ff79e428e64c384fb891f2, type: 3}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: Increase frog's tongue radius
       objectReference: {fileID: 0}
@@ -461,25 +465,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: TongueRadius
       objectReference: {fileID: 0}
+    - target: {fileID: 2536468076759448717, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -34206919893479097, guid: 28b9281748ff79e428e64c384fb891f2, type: 3}
     - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
       value: Tongue radius
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.0017
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -35.79665
       objectReference: {fileID: 0}
     - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -535,15 +543,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.3179
       objectReference: {fileID: 0}
     - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -1048,19 +1056,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.00171
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60.30645
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: cost
@@ -1070,6 +1078,10 @@ PrefabInstance:
       propertyPath: title
       value: More flies
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 8227262895916112601, guid: 7ec8e78a5ff662440a0043555e4de086, type: 3}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: Increase flies spawn
@@ -1084,19 +1096,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.0017
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -35.79665
       objectReference: {fileID: 0}
     - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -1152,15 +1164,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.3179
       objectReference: {fileID: 0}
     - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -1287,24 +1299,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.00171
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60.30645
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: title
       value: Final upgrade
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: -4027347831360013439, guid: 5a50b3340229f49499b4ebecdc431dc6, type: 3}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: Become the richest frog in the world
@@ -1319,19 +1335,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.0017
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -35.79665
       objectReference: {fileID: 0}
     - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -1375,15 +1391,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.3179
       objectReference: {fileID: 0}
     - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -1512,6 +1528,10 @@ PrefabInstance:
       value: Spawn freq
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 6902010182605359131, guid: 62282a100c56d3d49a35c1cd1bce1ef6, type: 3}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: Increase flies spawn frequency
       objectReference: {fileID: 0}
@@ -1519,6 +1539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnFrequency
       objectReference: {fileID: 0}
+    - target: {fileID: 2536468076759448717, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6902010182605359131, guid: 62282a100c56d3d49a35c1cd1bce1ef6, type: 3}
     - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
       value: Spawn freq
@@ -2534,19 +2558,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.00171
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60.30645
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: cost
@@ -2557,6 +2581,10 @@ PrefabInstance:
       value: Tongue Cooldown
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 8222512912483939870, guid: ecd6de7fc9652e242bacf272f7011373, type: 3}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: Increase frog's tongue cooldown
       objectReference: {fileID: 0}
@@ -2564,25 +2592,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: TongCooldown
       objectReference: {fileID: 0}
+    - target: {fileID: 2536468076759448717, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8222512912483939870, guid: ecd6de7fc9652e242bacf272f7011373, type: 3}
     - target: {fileID: 2559627443659534210, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
       value: Tongue Cooldown
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.0017
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -35.79665
       objectReference: {fileID: 0}
     - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -2618,15 +2650,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.3179
       objectReference: {fileID: 0}
     - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -2735,24 +2767,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.00171
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60.30645
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: title
       value: Golden fly
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 6580683319973207231, guid: cf2777f0287a4b843a5c28896138ee4c, type: 3}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: +5% for a special fly to spawn
@@ -2767,19 +2803,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.0017
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -35.79665
       objectReference: {fileID: 0}
     - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -2815,15 +2851,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.3179
       objectReference: {fileID: 0}
     - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -3370,24 +3406,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.00171
       objectReference: {fileID: 0}
     - target: {fileID: 204097162750092022, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60.30645
       objectReference: {fileID: 0}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: title
       value: Fly Value
       objectReference: {fileID: 0}
+    - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 9109104907336894895, guid: f9746ff384afd244dbcd9514b28d7e87, type: 3}
     - target: {fileID: 1164104309445548100, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: description
       value: Increase the value of the flies
@@ -3402,19 +3442,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 89.0017
       objectReference: {fileID: 0}
     - target: {fileID: 2826754339354413954, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -35.79665
       objectReference: {fileID: 0}
     - target: {fileID: 3262811808454698113, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
@@ -3454,15 +3494,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613170309406460091, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -22.3179
       objectReference: {fileID: 0}
     - target: {fileID: 6218827772358752313, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: m_text
