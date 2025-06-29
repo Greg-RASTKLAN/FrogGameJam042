@@ -8,21 +8,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3118392539532418246, guid: 300e468e726a8d945af3e10463691db4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9db1a109ca8e4054995a9e4ba22a8208, type: 2}
     - target: {fileID: 1137570234400846791, guid: 300e468e726a8d945af3e10463691db4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2926424338876190819, guid: dc96d5e8fa3313d49ae7d48752581598, type: 3}
     - target: {fileID: 1559932863542625733, guid: 300e468e726a8d945af3e10463691db4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1559932863542625733, guid: 300e468e726a8d945af3e10463691db4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1559932863542625733, guid: 300e468e726a8d945af3e10463691db4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1559932863542625733, guid: 300e468e726a8d945af3e10463691db4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2986271549530433472, guid: 300e468e726a8d945af3e10463691db4, type: 3}
       propertyPath: m_Name
-      value: Fly_Black
+      value: Fly_Golden
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6552704357095412688, guid: 300e468e726a8d945af3e10463691db4, type: 3}

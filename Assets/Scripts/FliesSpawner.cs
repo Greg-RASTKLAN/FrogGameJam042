@@ -3,28 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+[System.Serializable]
+public class FlyEntry
+{
+    public Fly prefab;                              // Reference to the prefab
+    [Range(0, 100)] public float spawnPercent = 25; // Initial value, editable in Inspector
+
+    [HideInInspector] public float runtimeSpawnPercent; // Used at runtime
+}
+
 public class FliesSpawner : MonoBehaviour
 {
+    public static FliesSpawner Instance;
+
     public static float spawnCooldown = 3f;
     public static int fliesToSpawn = 1;
 
     public BoxCollider2D spawnArea;
 
-    [SerializeField] private List<Fly> fliesList;
+    [SerializeField] private List<FlyEntry> flyEntries;
 
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(SpawnFlies());   
+        // Initialize runtime values from inspector
+        foreach (var entry in flyEntries)
+        {
+            entry.runtimeSpawnPercent = entry.spawnPercent;
+        }
+
+        StartCoroutine(SpawnFlies());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     IEnumerator SpawnFlies()
     {
         while (true)
@@ -40,43 +58,38 @@ public class FliesSpawner : MonoBehaviour
 
     private GameObject GetRandomFlyByPercent()
     {
-        float total = 0f;
-        foreach (var fly in fliesList)
-        {
-            total += fly.spawnPercent;
-        }
-
+        float total = flyEntries.Sum(e => e.runtimeSpawnPercent);
         if (total <= 0f)
         {
-            Debug.LogWarning("Total spawn percent is zero! Check the list of fly prefabs.");
-            return fliesList[0].gameObject;
+            Debug.LogWarning("Total spawn percent is zero.");
+            return flyEntries[0].prefab.gameObject;
         }
 
         float roll = Random.Range(0f, total);
         float cumulative = 0f;
 
-        foreach (var fly in fliesList)
+        foreach (var entry in flyEntries)
         {
-            cumulative += fly.spawnPercent;
+            cumulative += entry.runtimeSpawnPercent;
             if (roll <= cumulative)
             {
-                return fly.gameObject;
+                return entry.prefab.gameObject;
             }
         }
 
-        return fliesList[0].gameObject; //Fallback
-
+        return flyEntries[0].prefab.gameObject;
     }
+
 
     //Call this function after upgrades
     public void NormalizeSpawnChance()
     {
-        float total = fliesList.Sum(f => f.spawnPercent);
+        float total = flyEntries.Sum(e => e.runtimeSpawnPercent);
         if (total <= 0f) return;
 
-        foreach (var fly in fliesList)
+        foreach (var entry in flyEntries)
         {
-            fly.spawnPercent = (fly.spawnPercent / total) * 100f;
+            entry.runtimeSpawnPercent = (entry.runtimeSpawnPercent / total) * 100f;
         }
     }
 
@@ -89,6 +102,37 @@ public class FliesSpawner : MonoBehaviour
         float y = Random.Range(center.y - extents.y, center.y + extents.y);
 
         return new Vector2(x, y);
+    }
+
+    public void IncreaseFlySpawnChance(Fly targetFly, float increaseAmount)
+    {
+        var entry = flyEntries.FirstOrDefault(e => e.prefab == targetFly);
+        if (entry == null || increaseAmount <= 0f) return;
+
+        float maxIncrease = 100f - entry.runtimeSpawnPercent;
+        increaseAmount = Mathf.Min(increaseAmount, maxIncrease);
+
+        float totalOther = flyEntries.Where(e => e.prefab != targetFly).Sum(e => e.runtimeSpawnPercent);
+        if (totalOther <= 0f)
+        {
+            entry.runtimeSpawnPercent = 100f;
+            foreach (var e in flyEntries)
+            {
+                if (e != entry) e.runtimeSpawnPercent = 0f;
+            }
+            return;
+        }
+
+        foreach (var e in flyEntries)
+        {
+            if (e == entry) continue;
+            float share = e.runtimeSpawnPercent / totalOther;
+            e.runtimeSpawnPercent -= increaseAmount * share;
+            e.runtimeSpawnPercent = Mathf.Max(0f, e.runtimeSpawnPercent);
+        }
+
+        entry.runtimeSpawnPercent += increaseAmount;
+        NormalizeSpawnChance(); // optional cleanup
     }
 
 }

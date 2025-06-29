@@ -8,8 +8,8 @@ public class Fly : MonoBehaviour
     [SerializeField] private float lifetime = 3f;
     [SerializeField] private float noiseSpeed = 1f;
 
-    [Range(0, 100)] public float spawnPercent = 25f;
-    public int baseValue = 1;
+    //[Range(0, 100)] public float spawnPercent = 25f;
+    //public int baseValue = 1;
 
     private float xSeed;
     private float ySeed;
@@ -35,6 +35,15 @@ public class Fly : MonoBehaviour
             MoveWithPerlin();
         }
     }
+
+
+    public virtual void OnCaught()
+    {
+        GameManager.Instance.AddCurrency(GameManager.baseFlyValue);
+        Destroy(gameObject);
+    }
+
+
 
     public virtual void MoveWithPerlin()
     {

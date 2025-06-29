@@ -106,11 +106,7 @@ public class TongController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Fly fly = other.GetComponent<Fly>();
-        if (fly != null)
-        {
-            GameManager.Instance.AddCurrency(fly.baseValue);
-            Destroy(fly.gameObject);
-        }
+        fly?.OnCaught();
     }
 
     private void UpdateCooldownValue(float newCooldown) 

@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
     public float tongueRadius = 0.5f;
     public float tongueCooldown = 1f;
 
+    public static int baseFlyValue = 1;
+    public static int goldenFlyMultiplier = 10;
+
+
     public event Action<int> OnCurrencyChanged;
     public event Action<float> OnTongueRadiusChanged;
     public event Action<float> OnTongueCooldownDecreased;
