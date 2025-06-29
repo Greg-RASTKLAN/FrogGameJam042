@@ -2,26 +2,42 @@ using UnityEngine;
 
 public class MouseTracker : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private float rotationSpeed = 10f;
+
     void Start()
     {
-        
+        // Subscribe to tongue radius updates
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnTongueRadiusChanged -= UpdateTonguePreviewScale; // Prevent double-subscription
+            GameManager.Instance.OnTongueRadiusChanged += UpdateTonguePreviewScale;
+
+            // Set initial scale
+            UpdateTonguePreviewScale(GameManager.Instance.tongueRadius);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 mousePos = Input.mousePosition;
-
-        // Converti la position de la souris en coordonées du monde
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        // Met à jour la position de l'objet
         transform.position = new Vector3(mousePos.x, mousePos.y, transform.position.z);
 
+        transform.rotation *= Quaternion.Euler(0f, 0f, rotationSpeed * Time.deltaTime);
+    }
 
+    void UpdateTonguePreviewScale(float newRadius)
+    {
+        float diameter = newRadius + 0.2f;
+        transform.localScale = new Vector3(diameter, diameter, 1f);
+    }
 
-        /*Debug.Log(mousePos.x);
-        Debug.Log(mousePos.y);*/
+    void OnDestroy()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnTongueRadiusChanged -= UpdateTonguePreviewScale;
+        }
     }
 }
