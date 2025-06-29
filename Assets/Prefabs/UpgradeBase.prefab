@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c686eaf69154d4986c7bd7923037dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: -4489782124767382497, guid: 1ed02ccc77134964a9ff8be6631077b6, type: 3}
+  sprite: {fileID: -112936151, guid: 71962854e5d324e44a1802e547f5e050, type: 3}
   title: Title
   description: This is the description of the upgrade
   cost: 100
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4489782124767382497, guid: 1ed02ccc77134964a9ff8be6631077b6, type: 3}
+  m_Sprite: {fileID: -112936151, guid: 71962854e5d324e44a1802e547f5e050, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
