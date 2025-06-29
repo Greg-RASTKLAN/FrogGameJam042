@@ -8,8 +8,10 @@ public class FliesSpawner : MonoBehaviour
     public static float spawnCooldown = 3f;
     public static int fliesToSpawn = 1;
 
+    public BoxCollider2D spawnArea;
 
     [SerializeField] private List<Fly> fliesList;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,7 +32,7 @@ public class FliesSpawner : MonoBehaviour
             for (int i = 0; i < fliesToSpawn; i++)
             {
                 GameObject flyToSpawn = GetRandomFlyByPercent();
-                Instantiate(flyToSpawn, transform);
+                Instantiate(flyToSpawn, GetRandomPoint(), transform.rotation, transform);
             }
             yield return new WaitForSeconds(spawnCooldown);
         }
@@ -76,6 +78,17 @@ public class FliesSpawner : MonoBehaviour
         {
             fly.spawnPercent = (fly.spawnPercent / total) * 100f;
         }
+    }
+
+    public Vector2 GetRandomPoint()
+    {
+        Vector2 center = spawnArea.bounds.center;
+        Vector2 extents = spawnArea.bounds.extents;
+
+        float x = Random.Range(center.x - extents.x, center.x + extents.x);
+        float y = Random.Range(center.y - extents.y, center.y + extents.y);
+
+        return new Vector2(x, y);
     }
 
 }
