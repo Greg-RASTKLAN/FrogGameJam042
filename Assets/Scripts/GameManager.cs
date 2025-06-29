@@ -49,8 +49,5 @@ public class GameManager : MonoBehaviour
     {
         baseFlyValue += amount;
     }
-    public void DEBUGAddCurrency()
-    {
-        AddCurrency(500);
-    }
+   
 }

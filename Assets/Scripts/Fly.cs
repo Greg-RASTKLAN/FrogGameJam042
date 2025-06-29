@@ -59,4 +59,13 @@ public class Fly : MonoBehaviour
         // Set position relative to spawn position instead of adding to current position
         transform.position = spawnPosition + offset;
     }
+
+    protected virtual void OnDestroy()
+    {
+        if (FliesSpawner.Instance != null)
+        {
+            FliesSpawner.Instance.FlyDestroyed();
+        }
+    }
+
 }

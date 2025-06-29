@@ -406,7 +406,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1596923104}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1019,6 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnArea: {fileID: 529736366}
+  maxFlies: 50
   flyEntries:
   - prefab: {fileID: 6552704357095412688, guid: 300e468e726a8d945af3e10463691db4, type: 3}
     spawnPercent: 100
@@ -1467,11 +1468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4738593564956986494, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: basePrice
-      value: 20000
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 4738593564956986494, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: finalPrice
-      value: 20000
+      value: 100000
       objectReference: {fileID: 0}
     - target: {fileID: 4738593564956986494, guid: e4f30b74de5f7c142b3395e88a102478, type: 3}
       propertyPath: isIncremental

@@ -22,6 +22,11 @@ public class FliesSpawner : MonoBehaviour
 
     public BoxCollider2D spawnArea;
 
+    [Header("MaxFliesOnScreen")]
+    [SerializeField] private int maxFlies = 200;
+    private int currentFlies = 0;
+
+
     [SerializeField] private List<FlyEntry> flyEntries;
 
 
@@ -49,8 +54,11 @@ public class FliesSpawner : MonoBehaviour
         {
             for (int i = 0; i < fliesToSpawn; i++)
             {
+                if (currentFlies >= maxFlies)
+                    break;
                 GameObject flyToSpawn = GetRandomFlyByPercent();
                 Instantiate(flyToSpawn, GetRandomPoint(), transform.rotation, transform);
+                currentFlies++;
             }
             yield return new WaitForSeconds(spawnCooldown);
         }
@@ -135,4 +143,8 @@ public class FliesSpawner : MonoBehaviour
         NormalizeSpawnChance(); // optional cleanup
     }
 
+    public void FlyDestroyed()
+    {
+        currentFlies = Mathf.Max(0, currentFlies - 1);
+    }
 }
