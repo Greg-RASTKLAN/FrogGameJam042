@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: 100 flies'
+  m_text: 'Cost: 0 flies'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bd9e2d33d69cfe949be7637a6ffdb5f0, type: 2}
   m_sharedMaterial: {fileID: 7901943022931339118, guid: bd9e2d33d69cfe949be7637a6ffdb5f0, type: 2}
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 8.697113, z: 28.767395, w: 0}
+  m_margin: {x: 0, y: 23.719162, z: -30.41034, w: -13.201202}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -175,8 +175,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 207.7302, y: 77.7389}
+  m_AnchoredPosition: {x: 50.0735, y: -17.981}
+  m_SizeDelta: {x: 307.8772, y: 113.7008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1766019221366771376
 CanvasRenderer:
@@ -287,7 +287,6 @@ MonoBehaviour:
   sprite: {fileID: -112936151, guid: 71962854e5d324e44a1802e547f5e050, type: 3}
   title: Title
   description: This is the description of the upgrade
-  cost: 100
   cardImage: {fileID: 2536468076759448717}
   titleText: {fileID: 2559627443659534210}
   descriptionText: {fileID: 6218827772358752313}
@@ -304,6 +303,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b5b55794103314c8c810bcdda7c213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIncremental: 1
+  numberOfSteps: 5
+  increaseCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  basePrice: 5
+  finalPrice: 300
 --- !u!1 &5659217893983826696
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +348,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 133.315, y: 22.3179}
+  m_SizeDelta: {x: 132.59, y: 22.3179}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1251774616878660529
 CanvasRenderer:
@@ -396,7 +405,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.35
+  m_fontSize: 36.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -434,7 +443,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 2.3415222, z: 0, w: -7.6936035}
+  m_margin: {x: 0, y: -15.411835, z: -77.38635, w: -2.231018}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -532,8 +541,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -570,7 +579,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 9.366119, z: 30.105408, w: -6.355591}
+  m_margin: {x: 0, y: 15.283905, z: -34.534912, w: -7.721222}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -612,7 +621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 120.7, y: 20.1}
+  m_AnchoredPosition: {x: 153.94, y: 20.1}
   m_SizeDelta: {x: 137.63637, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7444424168586770200
@@ -675,8 +684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 23.1, y: 0}
-  m_SizeDelta: {x: 34.6475, y: 34.6475}
+  m_AnchoredPosition: {x: 42.2, y: 0}
+  m_SizeDelta: {x: 74.7064, y: 74.7064}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7797712933086957784
 CanvasRenderer:
