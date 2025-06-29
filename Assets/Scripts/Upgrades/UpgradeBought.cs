@@ -61,8 +61,7 @@ public class UpgradeBought : MonoBehaviour
         if (isIncremental)
         {
             currentStep = Mathf.Clamp(currentStep + 1, 0, numberOfSteps);
-            RecalculateUpgradeCost();
-
+            
             // Optional: hide if maxed
             if (currentStep >= numberOfSteps)
                 Destroy(gameObject);
@@ -71,6 +70,7 @@ public class UpgradeBought : MonoBehaviour
         {
             Destroy(gameObject); // One-time upgrade
         }
+        RecalculateUpgradeCost();
     }
 
     private void RecalculateUpgradeCost()
@@ -81,6 +81,10 @@ public class UpgradeBought : MonoBehaviour
         upgradeCost = Mathf.RoundToInt(interpolatedPrice);
 
         GetComponentInParent<UpgradeCard>().UpdateCostText(upgradeCost);
+        if (buttonRef != null)
+        {
+            buttonRef.interactable = (GameManager.Instance.currency >= upgradeCost);
+        }
     }
 
     public void UpdateButton(int currency)
