@@ -7,6 +7,7 @@ TagManager:
   - UpgCardImage
   - UpgCardTitle
   - UpgCardDescr
+  - GameMusic
   layers:
   - Default
   - TransparentFX
