@@ -29,7 +29,7 @@ public class MouseTracker : MonoBehaviour
 
     void UpdateTonguePreviewScale(float newRadius)
     {
-        float diameter = newRadius + 0.2f;
+        float diameter = newRadius * 2f;
         transform.localScale = new Vector3(diameter, diameter, 1f);
     }
 

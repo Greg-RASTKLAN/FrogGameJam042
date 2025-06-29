@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public int currency;
-    public float tongueRadius = 0.5f;
+    public float tongueRadius = .5f;
     public float tongueCooldown = 1f;
 
     public static int baseFlyValue = 1;

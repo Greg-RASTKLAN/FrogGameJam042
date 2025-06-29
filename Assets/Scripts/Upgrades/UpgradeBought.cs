@@ -26,12 +26,13 @@ public class UpgradeBought : MonoBehaviour
         buttonRef = GetComponent<Button>();
 
         stepIncrement = 1f / numberOfSteps;
-        RecalculateUpgradeCost();
+        
     }
 
     private void Start()
     {
         SubscribeToGameManager();
+        RecalculateUpgradeCost();
     }
 
     private void SubscribeToGameManager()
