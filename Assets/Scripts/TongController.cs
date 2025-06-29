@@ -43,7 +43,7 @@ public class TongController : MonoBehaviour
         {
             // ---------- PRÊT ----------
             case TongState.Ready:
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButton(0))
                 {
                     targetPosition = GetMouseWorldPos();
                     state = TongState.Shooting;
