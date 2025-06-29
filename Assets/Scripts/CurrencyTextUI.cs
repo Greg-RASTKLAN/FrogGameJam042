@@ -38,7 +38,7 @@ public class CurrencyTextUI : MonoBehaviour
     {
         if (currencyText != null)
         {
-            currencyText.text = $"${newCurrency}";
+            currencyText.text = $"{newCurrency}";
         }
         else
         {
