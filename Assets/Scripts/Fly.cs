@@ -16,6 +16,8 @@ public class Fly : MonoBehaviour
     private Vector3 spawnPosition; // Store the original spawn position
     private bool isInitialized = false;
 
+    private float age = 0f;
+
     void Start()
     {
         // Store the spawn position
@@ -32,6 +34,7 @@ public class Fly : MonoBehaviour
     {
         if (isInitialized)
         {
+            age += Time.deltaTime;
             MoveWithPerlin();
         }
     }
@@ -40,6 +43,7 @@ public class Fly : MonoBehaviour
     public virtual void OnCaught()
     {
         GameManager.Instance.AddCurrency(GameManager.baseFlyValue);
+        FliesSpawner.Instance.FlyDestroyed();
         Destroy(gameObject);
     }
 
@@ -47,7 +51,7 @@ public class Fly : MonoBehaviour
 
     public virtual void MoveWithPerlin()
     {
-        float t = Time.time * noiseSpeed;
+        float t = age * noiseSpeed; // instead of Time.time
 
         // Get Perlin noise values (-1 to 1 range)
         float x = Mathf.PerlinNoise(xSeed + t, ySeed + t) * 2f - 1f;
