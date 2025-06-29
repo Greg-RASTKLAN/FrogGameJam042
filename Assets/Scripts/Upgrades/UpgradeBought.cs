@@ -7,7 +7,7 @@ public class UpgradeBought : MonoBehaviour
     [SerializeField] private UpgradeContext context;
 
     private UpgradeEffect[] effects;
-    public int upgradeCost;
+    private int upgradeCost;
     private Button buttonRef;
 
     [Header("Progression Curve")]
