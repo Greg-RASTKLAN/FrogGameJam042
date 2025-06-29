@@ -8,7 +8,6 @@ public class UpgradeCard : MonoBehaviour
     [SerializeField] private Sprite sprite;
     [SerializeField] private string title;
     [SerializeField] private string description;
-    public int cost;
 
     [Header("UI References")]
     [SerializeField] private Image cardImage;
@@ -16,6 +15,7 @@ public class UpgradeCard : MonoBehaviour
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private TextMeshProUGUI costText;
 
+    private int cost;
 
     public void OnValidate()
     {
@@ -42,5 +42,11 @@ public class UpgradeCard : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateCostText(int newCost)
+    {
+        cost = newCost;
+        costText.text = ("Cost: " + cost + " flies");
     }
 }
